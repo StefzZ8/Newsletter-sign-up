@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss';
+import illustrationImg from './assets/images/illustration-sign-up-desktop.svg';
+import checkIcon from './assets/images/icon-list.svg';
+import Input from './components/Input/Input';
+import Button from './components/Button/SubscribeButton';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <section>
+        <div className='container'>
+          <div className='main-section'>
+            <h1>Stay updated!</h1>
+            <p className='first-p'>Join 60,000+ product managers receiving monthly updates on:</p>
+            <p><img src={checkIcon} alt="success" /> <span>Product discovery and building what matters</span></p>
+            <p><img src={checkIcon} alt="success" /> <span>Measuring to ensure updates are a success</span></p>
+            <p><img src={checkIcon} alt="success" /> <span>And much more!</span></p>
+            <div>
+              <Input />
+              <Button />
+            </div>
+          </div>
+          <div>
+            <img src={illustrationImg} alt="illustration-sign-up" className='img' />
+          </div>
+        </div>
+      </section>
     </>
   )
 }
 
-export default App
+export default App;
