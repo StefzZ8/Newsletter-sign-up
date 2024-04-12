@@ -13,7 +13,7 @@ $charcoal-grey: #565b87;
 .main-section {
   width: 100%;
   max-width: 400px;
-  padding: 50px;
+  padding: 30px 50px;
 
   h1 {
     color: $dark-slate-grey;
@@ -35,5 +35,24 @@ $charcoal-grey: #565b87;
     span {
       margin: 0 10px;
     }
+  }
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 470px;
   }
 }
