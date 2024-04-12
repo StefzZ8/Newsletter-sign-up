@@ -1,0 +1,38 @@
+@import './../../App.scss';
+
+.dismiss-container {
+  display: flex;
+  background: $white;
+  border-radius: 30px;
+}
+
+.dismiss-section {
+  width: 100%;
+  max-width: 380px;
+  padding: 50px;
+
+  .title {
+    color: $dark-slate-grey;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .parag {
+    color: $charcoal-grey;
+    line-height: 25px;
+    font-weight: 500;
+
+    span {
+      color: #3a406e;
+    }
+  }
+}
+
+button {
+  margin: 15px 0;
+
+  &:hover {
+    background: linear-gradient(90deg, #fa326b 10%, #ff6257 100%);
+    box-shadow: 5px 10px 20px 0 #ff6257ae;
+  }
+}
