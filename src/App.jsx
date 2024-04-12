@@ -1,14 +1,8 @@
-import Modal from './components/Modal/Modal';
-import Main from './components/Main';
+import SignUp from './components/SignupForm/SignUp';
 
 
 const App = () => {
-  return (
-    <>
-      <Main />
-      {/* <Modal /> */}
-    </>
-  )
+  return <SignUp />
 }
 
 export default App;
