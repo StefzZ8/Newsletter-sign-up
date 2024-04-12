@@ -1,6 +1,11 @@
+$white: #fff;
+$dark-slate-grey: #242742;
+$charcoal-grey: #565b87;
+
+
 .container {
   display: flex;
-  background: #fff;
+  background: $white;
   padding: 20px;
   border-radius: 30px;
 }
@@ -11,7 +16,7 @@
   padding: 50px;
 
   h1 {
-    color: #242742;
+    color: $dark-slate-grey;
     font-size: 3rem;
     font-weight: 700;
     margin: 10px 0;
@@ -23,7 +28,7 @@
 
   p {
     display: flex;
-    color: #565b87;
+    color: $charcoal-grey;
     font-weight: 500;
     line-height: 25px;
 
