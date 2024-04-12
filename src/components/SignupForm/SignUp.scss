@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 50px;
+
+    label {
+        color: #36384e;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    input {
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: 1px solid #8b8787;
+    }
+
+    input[type=email] {
+        font-size: 15px;
+    }
+
+}
+
+button {
+    padding: 20px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    border: 1px solid #8b8787;
+    background: #242742;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(90deg, #fa326b 10%, #ff6257 100%);
+        box-shadow: 5px 10px 20px 0 #ff6257ae;
+    }
+}
